@@ -1,6 +1,8 @@
 name: "Generate-README.md-snake"
 description: "Generates a snake game from a github user contributions grid. Output the animation as gif or svg"
 author: "InvalidLenni"
+icon: bookmark
+color: gray-dark
 
 runs:
   using: "docker"
