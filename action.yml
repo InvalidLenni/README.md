@@ -1,0 +1,19 @@
+name: "Generate-README.md-snake"
+description: "Generates a snake game from a github user contributions grid. Output the animation as gif or svg"
+author: "InvalidLenni"
+
+runs:
+  using: "docker"
+  image: "docker://InvalidLenni/snk:latest"
+
+inputs:
+  github_user_name:
+    description: "<USERNAME>"
+    required: true
+  svg_out_path:
+    description: "<PATH OF THE GENERATED SVG FILE>"
+    required: true
+
+outputs:
+  svg_out_path:
+    description: "The path of the generated svg file."
